@@ -25,7 +25,7 @@ function App() {
           return 'BlvckNexxus';
       }
     };
-    setTitle(); // Set the initial page title
+    setTitle();
   });
 
   return (
