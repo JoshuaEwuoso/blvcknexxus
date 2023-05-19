@@ -9,9 +9,10 @@ const Home = () => {
         <p>
           Welcome to BlvckNexxus
         </p>
-          <Link to="/BlvckmenFashion"> BlvckmenFashion </Link>
-          <Link to="/NexusNova"> NexusNova </Link>
-          <Link to="/Thrud4Front"> Thrud4Front </Link>
+          <Link onClick={()=> {document.title="BlvckmenFashion"}} to="/BlvckmenFashion"> BlvckmenFashion </Link>
+          <Link onClick={()=> {document.title="NexusNova"}}to="/NexusNova"> NexusNova </Link>
+          <Link onClick={()=> {document.title="Thrud4Front"}}to="/Thrud4Front"> Thrud4Front </Link>
+          <Link onClick={()=> {document.title="BlvckNexxus"}}to="/"> Home </Link>
     </header>
   )
 };
