@@ -1,31 +1,25 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './App.css';
 import React from 'react';
 import NexusNova from './pages/NexusNova';
 import Thrud4Front from './pages/Thrud4Front';
 import BlvckmenFashion from './pages/BlvckmenFashion';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://blvcknexxus.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          BlvckNexxus
-        </a>
-      </header>
-      <BlvckmenFashion />
-      <NexusNova />
-      <Thrud4Front />
-    </div>
+    <Router> 
+      <div className="App">
+        <div>
+          <Routes> 
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/BlvckmenFashion" element={<BlvckmenFashion />} />
+            <Route path="/NexusNova" element={<NexusNova />} />
+            <Route path="/Thrud4Front" element={<Thrud4Front />} />
+          </Routes> 
+        </div>
+      </div>
+    </Router> 
   );
 }
 
