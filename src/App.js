@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './App.css';
 import React from 'react';
-import NexusNova from './pages/NexusNova';
+import NexusNova from "./pages/NexusNova";
 import Thrud4Front from './pages/Thrud4Front';
 import BlvckmenFashion from './pages/BlvckmenFashion';
 import Home from './pages/Home';
