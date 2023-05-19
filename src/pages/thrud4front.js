@@ -3,7 +3,7 @@ import React from 'react';
 const Thrud4Front = () => {
   return (
     <div>
-      <h1>Welcome to the Forefront, where you hear thr news that concerns you</h1>
+      <h1>Welcome to the Forefront, where you hear the news that concerns you</h1>
       {/* Add any other content or components specific to the Home page */}
     </div>
   );
