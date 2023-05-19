@@ -1,4 +1,4 @@
-import { MemoryRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './App.css';
 import React from 'react';
 import NexusNova from "./pages/NexusNova";
