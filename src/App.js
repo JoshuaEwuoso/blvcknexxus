@@ -13,7 +13,7 @@ function App() {
         <div>
           <Routes> 
             <Route exact path="/" element={<Home />} />
-            <Route exact path="/BlvckmenFashion" element={<BlvckmenFashion />} />
+            <Route path="/BlvckmenFashion" element={<BlvckmenFashion />} />
             <Route path="/NexusNova" element={<NexusNova />} />
             <Route path="/Thrud4Front" element={<Thrud4Front />} />
           </Routes> 
