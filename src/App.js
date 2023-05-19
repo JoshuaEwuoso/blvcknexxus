@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import blvckMenFashion from './pages/blvckmenfashion';
-import nexusNova from './pages/nexusNova';
-import thruD4Front from './pages/thrud4front';
+import BlvckmenFashion from './pages/blvckmenfashion';
+import NexusNova from './pages/NexusNova';
+import Thrud4Front from './pages/thrud4front';
 
 function App() {
   return (
@@ -22,9 +22,9 @@ function App() {
           BlvckNexxus
         </a>
       </header>
-      <blvckMenFashion />
-      <nexusNova />
-      <thruD4Front />
+      <BlvckmenFashion />
+      <NexusNova />
+      <Thrud4Front />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const nexusNova = () => {
+const NexusNova = () => {
   return (
     <div>
       <h1>Welcome to the beginning of your coding journey</h1>
@@ -9,4 +9,4 @@ const nexusNova = () => {
   );
 };
 
-export default nexusNova;
+export default NexusNova;

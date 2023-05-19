@@ -1,6 +1,6 @@
 import React from 'react';
 
-const blvckMenFashion = () => {
+const BlvckmenFashion = () => {
   return (
     <div>
       <h1>Welcome to your path to better dressing</h1>
@@ -9,4 +9,4 @@ const blvckMenFashion = () => {
   );
 };
 
-export default blvckMenFashion;
+export default BlvckmenFashion;

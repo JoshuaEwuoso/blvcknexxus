@@ -1,6 +1,6 @@
 import React from 'react';
 
-const thruD4Front = () => {
+const Thrud4Front = () => {
   return (
     <div>
       <h1>Welcome to the Forefront, where you hear thr news that concerns you</h1>
@@ -9,4 +9,4 @@ const thruD4Front = () => {
   );
 };
 
-export default thruD4Front;
+export default Thrud4Front;
