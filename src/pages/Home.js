@@ -4,7 +4,7 @@ import logo from "../logo.svg"
 
 const Home = () => {
   return (
-      <header className="App-header">
+    <header className="App-header">
               <img src={logo} className="App-logo" alt="logo" />
               <p>
                 Edit <code>src/App.js</code> and save to reload.
@@ -20,8 +20,8 @@ const Home = () => {
               <Link to="/BlvckmenFashion"> BlvckmenFashion </Link>
               <Link to="/NexusNova"> NexusNova </Link>
               <Link to="/Thrud4Front"> Thrud4Front </Link>
-            </header>
-        )
+    </header>
+  )
 };
 
 export default Home;
