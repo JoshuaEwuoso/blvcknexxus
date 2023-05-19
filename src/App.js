@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import BlvckmenFashion from './pages/blvckmenfashion';
 import NexusNova from './pages/NexusNova';
-import Thrud4Front from './pages/thrud4front';
+import Thrud4Front from './pages/Thrud4Front';
+import BlvckmenFashion from './pages/BlvckmenFashion';
 
 function App() {
   return (
