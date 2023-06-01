@@ -4,13 +4,11 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <nav className="navigate">
-      <Link onClick={()=> {document.title="BlvckNexxus"}}to="/" id="startPage">
+      <Link onClick={()=> {document.title="BlvckNexxus"}}to="/">
         <img 
           src="https://logos-download.com/wp-content/uploads/2019/01/Nexxus_Logo.png" 
-          alt="BlvckNexxus" 
-          width="150" 
-          height="90" 
-          className="logo">
+          alt="BlvckNexxus"
+          className="site-logo">
         </img>
       </Link>
       <Link onClick={()=> {document.title="BlvckNexxus"}}to="/"> Home </Link>
