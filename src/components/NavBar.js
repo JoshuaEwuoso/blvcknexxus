@@ -11,8 +11,8 @@ const NavBar = () => {
           className="site-logo">
         </img>
       </Link>
-      <Link onClick={()=> {document.title="BlvckNexxus"}}to="/"> Home </Link>
-      <Link onClick={()=> {document.title="About Page"}}to="/About">About</Link>
+      <Link className="home-button" onClick={()=> {document.title="BlvckNexxus"}}to="/"> Home </Link>
+      <Link className="about-button" onClick={()=> {document.title="About Page"}}to="/About">About</Link>
     </nav>
   );
 };
