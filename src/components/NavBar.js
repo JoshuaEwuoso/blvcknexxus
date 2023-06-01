@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <nav className="navigate">
-      <Link to="/" id="startPage">
+      <Link onClick={()=> {document.title="BlvckNexxus"}}to="/" id="startPage">
         <img 
           src="https://logos-download.com/wp-content/uploads/2019/01/Nexxus_Logo.png" 
           alt="BlvckNexxus" 
