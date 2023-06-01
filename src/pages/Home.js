@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import React from "react";
 import logo from "../logo.svg"
+import Footer from "../components/Footer";
+
 
 const Home = () => {
   return (
-    <header className="App-header">
+    <div className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
         <p>
           Welcome to BlvckNexxus
@@ -12,8 +14,8 @@ const Home = () => {
           <Link onClick={()=> {document.title="BlvckmenFashion"}} to="/BlvckmenFashion"> BlvckmenFashion </Link>
           <Link onClick={()=> {document.title="NexusNova"}}to="/NexusNova"> NexusNova </Link>
           <Link onClick={()=> {document.title="Thrud4Front"}}to="/Thrud4Front"> Thrud4Front </Link>
-          <Link onClick={()=> {document.title="BlvckNexxus"}}to="/"> Home </Link>
-    </header>
+          <Footer />
+    </div>
   )
 };
 
