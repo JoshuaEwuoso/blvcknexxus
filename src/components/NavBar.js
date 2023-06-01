@@ -11,8 +11,12 @@ const NavBar = () => {
           className="site-logo">
         </img>
       </Link>
-      <Link className="home-button" onClick={()=> {document.title="BlvckNexxus"}}to="/"> Home </Link>
-      <Link className="about-button" onClick={()=> {document.title="About Page"}}to="/About">About</Link>
+      <ul>
+        <li><Link className="home-button" onClick={()=> {document.title="BlvckNexxus"}}to="/">Home</Link></li>
+        <li><Link className="about-button" onClick={()=> {document.title="About Page"}}to="/About">About</Link></li>
+      </ul>
+      {/* <Link className="home-button" onClick={()=> {document.title="BlvckNexxus"}}to="/">Home</Link>
+      <Link className="about-button" onClick={()=> {document.title="About Page"}}to="/About">About</Link> */}
     </nav>
   );
 };
