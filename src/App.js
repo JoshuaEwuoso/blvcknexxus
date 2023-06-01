@@ -1,10 +1,13 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import React, { useEffect } from 'react';
-import NexusNova from "./pages/NexusNova";
-import Thrud4Front from './pages/Thrud4Front';
-import BlvckmenFashion from './pages/BlvckmenFashion';
 import Home from './pages/Home';
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
+import NexusNova from "./pages/NexusNova";
+import Thrud4Front from "./pages/Thrud4Front";
+import BlvckmenFashion from "./pages/BlvckmenFashion";
+import About from "./pages/About";
 
 function App() {
   useEffect(() => {
@@ -31,14 +34,15 @@ function App() {
   return (
     <Router> 
       <div className="App">
-        <div>
+        <NavBar />
           <Routes> 
             <Route exact path="/" element={<Home />} />
             <Route path="/BlvckmenFashion" element={<BlvckmenFashion />} />
             <Route path="/NexusNova" element={<NexusNova />} />
             <Route path="/Thrud4Front" element={<Thrud4Front />} />
-          </Routes> 
-        </div>
+            <Route path="/About" element={<About />} />
+          </Routes>
+        <Footer />
       </div>
     </Router> 
   );
