@@ -27,12 +27,16 @@ ul li {
   margin-right: 400px; 
 } 
 
-.bottom {
+.footer {
 	font-weight: bold;
 	background-color: rgb(0, 0, 0);
 	color: white;
 	padding: 0.3cm;
   margin-top: auto;
+}
+
+.links a {
+  text-decoration: none;
 }
 
 .site-logo {
