@@ -16,7 +16,7 @@ const NavBar = () => {
         <li><Link className="about-button" onClick={()=> {document.title="About Page"}}to="/About">About</Link></li>
       </ul> */}
       <Link className="home-button" onClick={()=> {document.title="BlvckNexxus"}}to="/">Home</Link>
-      <Link className="about-button" onClick={()=> {document.title="About Page"}}to="/About">About</Link>
+      <Link className="about-button" onClick={()=> {document.title="BlvckNexxus | About Page"}}to="/About">About</Link>
     </nav>
   );
 };
