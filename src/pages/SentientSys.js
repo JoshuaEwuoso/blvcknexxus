@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NexusNova = () => {
+const SentientSys = () => {
   return (
     <div>
       <h1>Welcome to the beginning of your coding journey</h1>
@@ -9,4 +9,4 @@ const NexusNova = () => {
   );
 };
 
-export default NexusNova;
+export default SentientSys;

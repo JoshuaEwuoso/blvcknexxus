@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 import Home from './pages/Home';
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
-import NexusNova from "./pages/NexusNova";
+import SentientSys from "./pages/SentientSys";
 import Thrud4Front from "./pages/Thrud4Front";
 import BlvckmenFashion from "./pages/BlvckmenFashion";
 import About from "./pages/About";
@@ -20,8 +20,8 @@ function App() {
       switch (currentPath) {
         case '/Thrud4Front':
           return 'Thrud4Front';
-        case '/NexusNova':
-          return 'NexusNova';
+        case '/SentientSys':
+          return 'SentientSys';
         case '/BlvckmenFashion':
           return 'BlvckmenFashion';
         default: 
@@ -38,7 +38,7 @@ function App() {
           <Routes> 
             <Route exact path="/" element={<Home />} />
             <Route path="/BlvckmenFashion" element={<BlvckmenFashion />} />
-            <Route path="/NexusNova" element={<NexusNova />} />
+            <Route path="/SentientSys" element={<SentientSys />} />
             <Route path="/Thrud4Front" element={<Thrud4Front />} />
             <Route path="/About" element={<About />} />
           </Routes>

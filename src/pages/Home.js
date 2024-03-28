@@ -13,7 +13,7 @@ const Home = () => {
           <p>This is the hub where fashion, tech and news comes together</p>
       <div className="links">
         <Link onClick={()=> {document.title="BlvckmenFashion"}} to="/BlvckmenFashion"> BlvckmenFashion </Link>
-        <Link onClick={()=> {document.title="NexusNova"}}to="/NexusNova"> NexusNova </Link>
+        <Link onClick={()=> {document.title="SentientSys"}}to="/NexusNova"> SentientSys </Link>
         <Link onClick={()=> {document.title="Thrud4Front"}}to="/Thrud4Front"> Thrud4Front </Link>
       </div>       
     </div>
