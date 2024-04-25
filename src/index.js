@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "./fonts/FFF_Tusj.ttf";
+import "./fonts/Villa.ttf";
+import "./fonts/Zebraesq.ttf";
+
 // import { BrowserRouter as Router } from "react-router-dom";
 
 
