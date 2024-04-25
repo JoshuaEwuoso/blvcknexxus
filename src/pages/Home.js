@@ -10,17 +10,17 @@ const Home = () => {
         <div className="links">
           <p>
             <Link onClick={()=> {document.title="BlvckmenFashion"}} to="/BlvckmenFashion">
-              <img src="/blvckmenfashionlogo.png" alt="BlvckmenFashion" />
+              <img src="/blvckmenfashion.png" alt="BlvckmenFashion" />
             </Link>
           </p>
           <p>
             <Link onClick={()=> {document.title="SentientSys"}} to="/SentientSys">
-              <img src="/sentientsyslogo.png" alt="SentientSys" />
+              <img src="/sentientsys.png" alt="SentientSys" />
             </Link>
           </p>
           <p>
             <Link onClick={()=> {document.title="Thrud4Front"}} to="/Thrud4Front">
-              <img src="/forefronttvlogo.png" alt="Thrud4Front" />
+              <img src="/thrud4front.png" alt="Thrud4Front" />
             </Link>
           </p>
       </div>

@@ -11,6 +11,11 @@
   background-color: #dcdada;
   padding: 10px 10px;
   border-radius: 38%;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 35px;
+	overflow: hidden;
 }
 
 .home-button {
@@ -19,6 +24,11 @@
   background-color: #dcdada;
   border-radius: 38%;
   padding: 10px 10px;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 35px;
+	overflow: hidden;
 }
 
 ul li { 
@@ -36,29 +46,16 @@ ul li {
   text-align: center;
 }
 
-.links p a {
-  text-decoration: none;
-  
-}
 
-.links p {
+.links p img {
+  max-width: 50%;
+  max-height: 50%;
   display:inline-block;
-  padding-left: 40px;
-	justify-content: center;
-	align-items: center;
 	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
-	border-radius: 25px;
-	padding: 15px;
-	letter-spacing: 5px;
-	text-decoration: none;
+	border-radius: 35px;
 	overflow: hidden;
-	color: #fff;
-	font-weight: 500px;
-	z-index: 1;
-	transition: 0.5s;
-	backdrop-filter: blur(15px);
 }
 
 .site-logo {
@@ -74,17 +71,6 @@ ul li {
   align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #ffffff;
   display: flex;
@@ -98,11 +84,3 @@ ul li {
   color: #000000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
