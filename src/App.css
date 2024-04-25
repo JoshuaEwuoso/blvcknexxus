@@ -44,6 +44,21 @@ ul li {
 .links p {
   display:inline-block;
   padding-left: 40px;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 25px;
+	padding: 15px;
+	letter-spacing: 5px;
+	text-decoration: none;
+	overflow: hidden;
+	color: #fff;
+	font-weight: 500px;
+	z-index: 1;
+	transition: 0.5s;
+	backdrop-filter: blur(15px);
 }
 
 .site-logo {

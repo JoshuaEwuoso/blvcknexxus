@@ -3,7 +3,7 @@ import React from "react";
 import logo from "../logo.svg"
 
 
-const Home = () => {
+/*const Home = () => {
   return (
     <div className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -24,6 +24,26 @@ const Home = () => {
       </div>       
     </div>
   )
+};*/
+const Home = () => {
+  return (
+    <div className="App-header">
+      <img src={logo} className="App-logo" alt="logo" />
+      <p>Welcome to BlvckNexxus!</p>
+      <p>This is the hub where Fashion, Tech and News come together</p>
+      <div className="links">
+        <Link onClick={()=> {document.title="BlvckmenFashion"}} to="/BlvckmenFashion">
+          <img src="/blvckmenfashionlogo.png" alt="BlvckmenFashion" />
+        </Link>
+        <Link onClick={()=> {document.title="SentientSys"}} to="/SentientSys">
+          <img src="/sentientsyslogo.png" alt="SentientSys" />
+        </Link>
+        <Link onClick={()=> {document.title="Thrud4Front"}} to="/Thrud4Front">
+          <img src="/forefronttvlogo.png" alt="Thrud4Front" />
+        </Link>
+      </div>
+    </div>
+  );
 };
 
 export default Home;
