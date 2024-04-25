@@ -12,9 +12,15 @@ const Home = () => {
           </p>
           <p>This is the hub where Fashion, Tech and News comes together</p>
       <div className="links">
-        <Link onClick={()=> {document.title="BlvckmenFashion"}} to="/BlvckmenFashion"> BlvckmenFashion </Link>
-        <Link onClick={()=> {document.title="SentientSys"}}to="/SentientSys"> SentientSys </Link>
-        <Link onClick={()=> {document.title="Thrud4Front"}}to="/Thrud4Front"> Thrud4Front </Link>
+        <p>
+          <Link onClick={()=> {document.title="BlvckmenFashion"}} to="/BlvckmenFashion"> BlvckmenFashion </Link>
+        </p>
+        <p>
+          <Link onClick={()=> {document.title="SentientSys"}}to="/SentientSys"> SentientSys </Link>
+        </p>
+        <p> 
+          <Link onClick={()=> {document.title="Thrud4Front"}}to="/Thrud4Front"> Thrud4Front </Link>
+        </p>
       </div>       
     </div>
   )

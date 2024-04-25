@@ -35,13 +35,19 @@ ul li {
   margin-top: auto;
 }
 
-.links a {
+.links p a {
   text-decoration: none;
+  
+}
+
+.links p {
+  display:inline-block;
+  padding-left: 40px;
 }
 
 .site-logo {
-  width: 150px; 
-  height: 90px; 
+  width: 200px; 
+  height: 150px; 
 }
 
 .navigate {
