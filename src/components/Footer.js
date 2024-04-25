@@ -9,8 +9,8 @@ const Footer = () => {
         <p>Got anything to ask?</p>
         <div className="footer-info">
             <span>Email us: contact@blvcknexxus.com</span>{' '}
-            <span>Greater New York Area, USA</span>{' '}
-            <span>Call us: +1 (858) 058-9558</span>
+            <span> | Greater New York Area, USA</span>{' '}
+            <span> | Call us: +1 (858) 058-9558</span>
         </div>
         <hr/>
       </div>

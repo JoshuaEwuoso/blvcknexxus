@@ -8,9 +8,9 @@ const Home = () => {
     <div className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Welcome to BlvckNexxus
+            Welcome to BlvckNexxus!
           </p>
-          <p>This is the hub where fashion, tech and news comes together</p>
+          <p>This is the hub where Fashion, Tech and News comes together</p>
       <div className="links">
         <Link onClick={()=> {document.title="BlvckmenFashion"}} to="/BlvckmenFashion"> BlvckmenFashion </Link>
         <Link onClick={()=> {document.title="SentientSys"}}to="/SentientSys"> SentientSys </Link>
