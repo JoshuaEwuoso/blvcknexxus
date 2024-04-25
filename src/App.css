@@ -31,12 +31,12 @@
 
 .welcome{
   font-family: "Zebraesq";
-  margin: 70px;
+  margin: 50px;
 }
 
 .descript{
   font-family: "Zebraesq";
-  margin: 70px;
+  margin: 50px;
 }
  
 .footer {
@@ -46,6 +46,11 @@
 	padding: 0.3cm;
   margin-top: auto;
   text-align: center;
+  font-family: "Villa";
+}
+
+.footer-info { 
+  font-family: "Zebraesq";
 }
 
 .links img {
@@ -60,8 +65,8 @@
 }
 
 .site-logo {
-  width: 210px; 
-  height: 160px; 
+  width: 250px; 
+  height: 250px; 
 }
 
 .navigate {

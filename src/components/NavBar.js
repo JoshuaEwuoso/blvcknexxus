@@ -6,7 +6,7 @@ const NavBar = () => {
     <nav className="navigate">
       <Link onClick={()=> {document.title="BlvckNexxus"}}to="/">
         <img
-          src="/bignexuslogo.png"
+          src="/newnexus.png"
           alt="BlvckNexxus"
           className="site-logo">
         </img>

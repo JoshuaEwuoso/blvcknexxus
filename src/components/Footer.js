@@ -5,8 +5,9 @@ const Footer = () => {
         <footer className="footer">
          <section>
       <div>
-        <h3>Got anything to ask?</h3>
+        
         <div className="footer-info">
+        <h3>Got anything to ask?</h3>
             <span>Email us: contact@blvcknexxus.com</span>{' '}
             <span> | Greater New York Area, USA</span>{' '}
             <span> | Call us: +1 (858) 058-9558</span>
