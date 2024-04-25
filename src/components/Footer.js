@@ -5,8 +5,7 @@ const Footer = () => {
         <footer className="footer">
          <section>
       <div>
-        <h3>Contact Me</h3>
-        <p>Got anything to ask?</p>
+        <h3>Got anything to ask?</h3>
         <div className="footer-info">
             <span>Email us: contact@blvcknexxus.com</span>{' '}
             <span> | Greater New York Area, USA</span>{' '}

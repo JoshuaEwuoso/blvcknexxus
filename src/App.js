@@ -43,8 +43,8 @@ function App() {
             <Route path="/Thrud4Front" element={<Thrud4Front />} />
             <Route path="/About" element={<About />} />
           </Routes>
-        <Footer />
       </div>
+        <Footer />
     </Router> 
   );
 }

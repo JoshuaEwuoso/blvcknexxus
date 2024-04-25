@@ -5,9 +5,7 @@ const NavBar = () => {
   return (
     <nav className="navigate">
       <Link onClick={()=> {document.title="BlvckNexxus"}}to="/">
-        <img 
-          //src="https://logos-download.com/wp-content/uploads/2019/01/Nexxus_Logo.png"
-          //src="https://www.dutchgrown.com/cdn/shop/products/LilyStarGazer.jpg?v=1668676765"
+        <img
           src="/bignexuslogo.png"
           alt="BlvckNexxus"
           className="site-logo">
