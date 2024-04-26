@@ -31,26 +31,33 @@
 
 .intro{
   font-family: "Zebraesq";
+  margin: 50px;
 }
 
 .para {
-  font-family: "Villa";
+  font-family: "Zebraesq";
+  margin: 50px;
+  font-size: 20px;
 }
 
 .description{
   font-family: "Zebraesq";
+  margin: 50px;
 }
 
 .front-header{
   font-family: "Zebraesq";
+  margin: 50px;
 }
 
 .sentient-header{
   font-family: "Zebraesq";
+  margin: 50px;
 }
 
 .fashion-header{
   font-family: "Zebraesq";
+  margin: 50px;
 }
 
 .welcome{
@@ -78,8 +85,8 @@
 }
 
 .links img {
-  max-width: 55%;
-  max-height: 55%;
+  max-width: 50%;
+  max-height: 50%;
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
   border-radius: 35px;
 }

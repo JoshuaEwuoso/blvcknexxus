@@ -21,7 +21,7 @@ const Home = () => {
         </p>
         <p>
           <Link onClick={()=> {document.title="Thrud4Front"}} to="/Thrud4Front">
-            <img src="/thrud4front.png" alt="Thrud4Front" />
+            <img src="/forefrontnew.png" alt="Thrud4Front" />
           </Link>
         </p>
       </div>
