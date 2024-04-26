@@ -50,13 +50,25 @@
   margin: 50px;
 }
 
+.front-info{
+  margin: 50px;
+}
+
 .sentient-header{
   font-family: "Zebraesq";
   margin: 50px;
 }
 
+.sentient-info{
+  margin: 50px;
+}
+
 .fashion-header{
   font-family: "Zebraesq";
+  margin: 50px;
+}
+
+.fashion-info{
   margin: 50px;
 }
 
