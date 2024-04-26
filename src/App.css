@@ -29,6 +29,18 @@
   color: black;
 }
 
+.intro{
+  font-family: "Zebraesq";
+}
+
+.para {
+  font-family: "Villa";
+}
+
+.description{
+  font-family: "Zebraesq";
+}
+
 .front-header{
   font-family: "Zebraesq";
 }
