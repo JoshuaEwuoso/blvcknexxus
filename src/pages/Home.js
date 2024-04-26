@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div>
       <div className="App-header">
-        <p className="welcome">Welcome to BlvckNexxus!</p>
+        <p className="welcome">Welcome to BlvckNexxus</p>
         <p className="descript">This is the hub where Fashion, Tech, and News come together</p>
       </div>
       <div className="links">
