@@ -29,6 +29,18 @@
   color: black;
 }
 
+.front-header{
+  font-family: "Zebraesq";
+}
+
+.sentient-header{
+  font-family: "Zebraesq";
+}
+
+.fashion-header{
+  font-family: "Zebraesq";
+}
+
 .welcome{
   font-family: "Zebraesq";
   margin: 50px;
