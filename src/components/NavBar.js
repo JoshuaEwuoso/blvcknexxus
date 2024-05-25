@@ -8,11 +8,13 @@ const NavBar = () => {
         <img
           src="/newnexus.png"
           alt="BlvckNexxus"
-          className="site-logo">
-        </img>
+          className="site-logo"
+        />
       </Link>
-      <Link className="home-button" onClick={()=> {document.title="BlvckNexxus"}}to="/">Home</Link>
-      <Link className="about-button" onClick={()=> {document.title="BlvckNexxus | About Page"}}to="/About">About</Link>
+      <div className="button-wrapper">
+        <Link className="home-button" onClick={()=> {document.title="BlvckNexxus"}}to="/">Home</Link>
+        <Link className="about-button" onClick={()=> {document.title="BlvckNexxus | About Page"}}to="/About">About</Link>
+      </div>
     </nav>
   );
 };
