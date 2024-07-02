@@ -354,13 +354,6 @@ input {
   margin-bottom: 15px; 
 }
 
-
-.hero-banner img {
-  border-radius: 25%;
-  max-width: 750px;
-  display: block;
-}
-
 .podcast { 
   padding: var(--section-padding) 0; 
 }
@@ -370,7 +363,9 @@ input {
   gap: 30px;
 }
 
-.podcast-card { border-radius: 4px; }
+.podcast-card { 
+  border-radius: 4px; 
+}
 
 .card-banner {
   position: relative;
@@ -519,8 +514,32 @@ input {
   background-position: right;
 }
 
-@media (min-width: 768px) {
+/* Styles for larger screens */
+.hero-banner img {
+  border-radius: 25%;
+  max-width: 650px;
+  padding: 0;
+  display: block;
+  margin: 0 auto; /* Center the image by default */
+}
 
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .hero-banner img {
+    margin: 0; /* Remove auto centering */
+    float: left; /* Move image to the left */
+    width: 100%;
+  }
+
+  .hero-banner img {
+    padding: 0; /* Remove padding from the container */
+    margin: 0; /* Remove margin from the container */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-start; /* Align items to the start (left) */
+  }
+}
+
+@media (min-width: 768px) {
   :root {
     --fs-2: 18px;
     --fs-4: 18px;
@@ -544,7 +563,6 @@ input {
     justify-content: flex-start;
     align-items: center;
     gap: 25px;
-    
   }
 
   .hero-btn-group a {
@@ -582,13 +600,13 @@ input {
   .newsletter-card .input-field { 
     padding-right: 155px; 
   }
-
 }
 
 @media (min-width: 1024px) {
   .container {
-     max-width: 980px; 
+    max-width: 980px; 
   }
+  
   .navbar::before,
   .overlay { 
     display: none; 
@@ -617,7 +635,6 @@ input {
 }
 
 @media (min-width: 1200px) {
-
   :root {
     --section-padding: 60px;
   }
@@ -666,6 +683,6 @@ input {
   .podcast-list { 
     grid-template-columns: repeat(4, 1fr); 
   }
-
 }
+
 
