@@ -16,7 +16,7 @@ const Thrud4Front = () => (
                 lectus eget morbi dui felis.
               </p>
               <div class="hero-btn-group">
-                  <a href="https://facebook.com" class="btn-link">
+                  <a href="https://google.com" class="btn-link">
                   <button class="btn btn-primary">
                   <ion-icon name="headset"></ion-icon>
                   <span>Listen Now</span>
@@ -24,11 +24,11 @@ const Thrud4Front = () => (
                   </a>
                 <div class="btn-link-wrapper">
                   <p class="btn-title">Subscribe On:</p>
-                  <a href="https://facebook.com" class="btn-link">
+                  <a href="https://google.com" class="btn-link">
                     <ion-icon name="logo-apple"></ion-icon>
                     <span>Apple Music</span>
                   </a>
-                  <a href="https://facebook.com" class="btn-link">
+                  <a href="https://google.com" class="btn-link">
                     <ion-icon name="logo-soundcloud"></ion-icon>
                     <span>SoundCloud</span>
                   </a>
@@ -42,7 +42,7 @@ const Thrud4Front = () => (
         <section class="podcast" id="podcast">
           <ul class="podcast-list">
             <li>
-              <a href="https://facebook.com" class="podcast-card">
+              <a href="https://google.com" class="podcast-card">
                 <figure class="card-banner">
                   <img src="micpic.png" alt="Tube Preamps, TLM103 vs. OJ 818, Podcastage's Beanies"/>
                     <div class="card-banner-icon">
@@ -59,7 +59,7 @@ const Thrud4Front = () => (
               </a>
             </li>
             <li>
-              <a href="https://facebook.com" class="podcast-card">
+              <a href="https://google.com" class="podcast-card">
                 <figure class="card-banner">
                   <img src="micpic.png" alt="Ask Unladylike: Late Bloomer with Forever 35"/>
                     <div class="card-banner-icon">
@@ -76,7 +76,7 @@ const Thrud4Front = () => (
               </a>
             </li>
             <li>
-              <a href="https://facebook.com" class="podcast-card">
+              <a href="https://google.com" class="podcast-card">
                 <figure class="card-banner">
                   <img src="micpic.png" alt="How to Effectively Incentivize Team Members"/>
                     <div class="card-banner-icon">
@@ -93,7 +93,7 @@ const Thrud4Front = () => (
               </a>
             </li>
             <li>
-              <a href="https://facebook.com" class="podcast-card">
+              <a href="https://google.com" class="podcast-card">
                 <figure class="card-banner">
                   <img src="micpic.png" alt="How to go from Start-Up to Scale-Up"/>
                     <div class="card-banner-icon">
@@ -110,7 +110,7 @@ const Thrud4Front = () => (
               </a>
             </li>
             <li>
-              <a href="https://facebook.com" class="podcast-card">
+              <a href="https://google.com" class="podcast-card">
                 <figure class="card-banner">
                   <img src="micpic.png" alt="Deadbuttons - Tired of You | Live at Club Heavy"/>
                     <div class="card-banner-icon">
@@ -127,7 +127,7 @@ const Thrud4Front = () => (
               </a>
             </li>
             <li>
-              <a href="https://facebook.com" class="podcast-card">
+              <a href="https://google.com" class="podcast-card">
                 <figure class="card-banner">
                   <img src="micpic.png" alt="Boogie Through the Universe with SOWO"/>
                     <div class="card-banner-icon">
@@ -144,7 +144,7 @@ const Thrud4Front = () => (
               </a>
             </li>
             <li>
-              <a href="https://facebook.com" class="podcast-card">
+              <a href="https://google.com" class="podcast-card">
                 <figure class="card-banner">
                   <img src="micpic.png" alt="Glittering Blackness, Fall - 4 | Live at Club Heavy"/>
                     <div class="card-banner-icon">
@@ -161,7 +161,7 @@ const Thrud4Front = () => (
               </a>
             </li>
             <li>
-              <a href="https://facebook.com" class="podcast-card">
+              <a href="https://google.com" class="podcast-card">
                 <figure class="card-banner">
                   <img src="micpic.png" alt="The Meditative Photos of Chaelinjane"/>
                     <div class="card-banner-icon">
