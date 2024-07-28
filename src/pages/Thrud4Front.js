@@ -24,11 +24,11 @@ const Thrud4Front = () => (
                   </a>
                 <div class="btn-link-wrapper">
                   <p class="btn-title">Subscribe On:</p>
-                  <a href="https://google.com" class="btn-link">
+                  <a href="https://music.apple.com" class="btn-link">
                     <ion-icon name="logo-apple"></ion-icon>
                     <span>Apple Music</span>
                   </a>
-                  <a href="https://google.com" class="btn-link">
+                  <a href="https://soundcloud.com" class="btn-link">
                     <ion-icon name="logo-soundcloud"></ion-icon>
                     <span>SoundCloud</span>
                   </a>
