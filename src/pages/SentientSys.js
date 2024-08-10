@@ -4,7 +4,7 @@ const SentientSys = () => {
   return (
     <div className="sentient-header">
       <h1>You made it! 
-        Welcome to the beginning of your coding journey</h1>
+        Welcome to the beginning of your coding journey!</h1>
         <p className="sentient-info">Being a nerd is celebrated here</p>
     </div>
   );
