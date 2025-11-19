@@ -1,0 +1,389 @@
+/* ============================================================
+   4FRONTV HYBRID THEME
+   Hero (dark) → Content (white) → Footer/Newsletter (dark)
+   Color scheme: Black · Gold · White
+   ============================================================ */
+
+
+/* ------------------------------------------------------------
+   GLOBAL PAGE WRAPPER
+------------------------------------------------------------ */
+
+/* Responsive typography system */
+:root {
+    --h1-size: clamp(1.8rem, 3vw, 3.2rem);
+    --h2-size: clamp(1.4rem, 2.2vw, 2.4rem);
+    --h3-size: clamp(1.2rem, 1.8vw, 2rem);
+    --p-size: clamp(0.9rem, 1.2vw, 1.2rem);
+    --small-size: clamp(0.75rem, 1vw, 1rem);
+}
+
+/* Apply to hero */
+
+
+/* Episode cards */
+.card-title {
+    font-size: var(--h3-size);
+}
+
+.card-meta time,
+.pod-epi {
+    font-size: var(--small-size);
+}
+
+/* Subscribe label */
+.subscribe-label {
+    font-size: var(--p-size);
+}
+
+/* Newsletter */
+.newsletter .h3 {
+    font-size: var(--h2-size);
+}
+
+
+.front-header {
+  background: #000; /* Dark hero top */
+  padding-top: 40px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.front-header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.front-header p {
+  font-size: 1.1rem;
+  opacity: 0.85;
+}
+
+
+/* ------------------------------------------------------------
+   MAIN CONTENT AREA
+------------------------------------------------------------ */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+
+/* ============================================================
+   HERO SECTION (dark top portion)
+============================================================ */
+.hero {
+  background: #111;                         /* Matte black */
+  border-radius: 18px;
+  padding: 40px 30px;
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  color: #fff;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-title {
+  max-width: 380px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  margin-bottom: 20px;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.podcast-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.podcast-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: #141414;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.card-banner img {
+  width: 200px; 
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card-meta {
+  font-size: 0.95rem;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+
+/* CONTAINER HOLDING THE BUTTONS */
+.subscribe-box {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* SUBSCRIBE ON */
+.subscribe-label {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #f7c531;
+  width: max-content;
+  padding-bottom: 4px;
+}
+
+/* BUTTON ROW */
+.subscribe-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;          /* space between buttons */
+  flex-wrap: wrap;    /* so they stack on very small screens */
+}
+
+/* Buttons */
+.btn-primary {
+    background: #f7c531;       /* gold */
+  color: #000;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: auto;               /* <-- fixes stretching */
+  cursor: pointer;
+  margin: 0 auto;            /* center horizontally */
+  transition: 0.25s ease;
+}
+
+.btn-primary:hover {
+ background: #ffdd61;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+}
+
+.btn-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #1d1d1d;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 1px solid #f7c531;
+  transition: 0.25s ease-in-out;
+  white-space: nowrap;  /* prevent breaking words */
+}
+
+.btn-link:hover {
+  background: #f7c531;
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(247, 197, 49, 0.4);
+}
+
+.btn-title {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Fix spacing around the block */
+.subscribe-box {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Right-side hero image */
+.hero-banner img {
+  width: 350px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 204, 51, 0.3);
+}
+
+
+/* Responsive hero */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-banner img {
+    width: 80%;
+  }
+}
+
+
+/* ============================================================
+   PODCAST LIST SECTION (white mid-section)
+============================================================ */
+.podcast {
+  background: #141414;
+  padding: 40px 0;
+  border-radius: 18px;
+}
+
+.podcast-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.podcast-card {
+  background: #000000;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  text-decoration: none;
+  color: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.podcast-card:hover {
+  transform: translateY(-6px);
+}
+
+
+/* Podcast image */
+.card-banner img {
+  width: 100%;
+  display: block;
+}
+
+.card-banner {
+  position: relative;
+}
+
+.card-banner-icon {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: #ff33ff00;
+  color: #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+
+/* Podcast content */
+.card-content {
+  padding: 15px;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.card-title {
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.card-meta time,
+.card-meta p {
+  color: #f7c531 !important; /* gold */
+}
+
+
+
+/* ============================================================
+   NEWSLETTER SECTION (dark bottom section)
+============================================================ */
+.newsletter {
+  margin-top: 50px;
+}
+
+.newsletter-card {
+  background: #111;
+  padding: 40px 30px;
+  border-radius: 18px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.newsletter-card .card-title {
+  color: #fff;
+}
+
+.newsletter-card .card-text {
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 14px 15px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #222;
+  color: #fff;
+}
+
+.input-field::placeholder {
+  color: #888;
+}
+
+.newsletter-card .btn-primary {
+  margin-top: 10px;
+  width: 180px;
+}
+
+
+/* Responsive */
+@media (max-width: 700px) {
+  .newsletter-card {
+    text-align: center;
+  }
+
+  .newsletter-card .btn-primary {
+    width: 100%;
+  }
+}
+
+.hero-text {
+    font-size: var(--p-size);
+}
