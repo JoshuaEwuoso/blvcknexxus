@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import NavBar from './components/NavBar';
 import AeonByte from './pages/AeonByte';
 import Thrud4Front from './pages/Thrud4Front';
-import BlvckmenFashion from './pages/BlvckmenFashion';
+import TerraKulture from './pages/TerraKulture';
 import About from './pages/About';
 
 function App() {
@@ -22,8 +22,8 @@ function App() {
 					return '4FrontTV';
 				case '/AeonByte':
 					return 'AeonByte';
-				case '/BlvckmenFashion':
-					return 'BlvckmenFashion';
+				case '/TerraKulture':
+					return 'TerraKulture';
 				default:
 					return 'BlvckNexxus';
 			}
@@ -37,7 +37,7 @@ function App() {
 				<NavBar />
 				<Routes>
 					<Route exact path='/' element={<Home />} />
-					<Route path='/BlvckmenFashion' element={<BlvckmenFashion />} />
+					<Route path='/TerraKulture' element={<TerraKulture />} />
 					<Route path='/AeonByte' element={<AeonByte />} />
 					<Route path='/4FrontTV' element={<Thrud4Front />} />
 					<Route path='/About' element={<About />} />

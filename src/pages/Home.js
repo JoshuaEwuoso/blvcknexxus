@@ -16,13 +16,13 @@ const Home = () => {
 				<div className='links'>
 					{/* --------- Fashion / Kultre (temporary) --------- */}
 					<Link
-						to='/BlvckmenFashion'
+						to='/TerraKulture'
 						className='flip-card'
-						onClick={() => (document.title = 'BlvckNexxus | BlvckmenFashion')}
+						onClick={() => (document.title = 'BlvckNexxus | TerraKulture')}
 					>
 						<div className='flip-inner'>
 							<div className='flip-front'>
-								<img src='/blvckmenfashion.png' alt='Fashion' />
+								<img src='/Terra.png' alt='Fashion' />
 							</div>
 
 							<div className='flip-back'>

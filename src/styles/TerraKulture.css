@@ -1,0 +1,322 @@
+/* ============================================================
+   TerraKulture — Luxury Olive-Gold Theme
+   ============================================================ */
+
+:root {
+  --tk-olive: #556b2f;
+  --tk-olive-light: #6f8740;
+  --tk-gold: rgba(129, 173, 78, 0.9);
+  --tk-gold-soft: rgba(129, 173, 78, 0.9);
+  --tk-black: #0a0a0a;
+  --tk-ivory: #f9f6ee;
+  --tk-text-muted: #d0cbbd;
+}
+
+.tk-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--tk-black);
+  color: var(--tk-ivory);
+  font-family: "Zebraesq", sans-serif;
+}
+
+.tk-main {
+  flex: 1;
+}
+
+/* ---------------- HERO ---------------- */
+
+.tk-hero {
+  padding: 90px 20px 70px;
+  text-align: center;
+  background: radial-gradient(circle at top, #1b240d 0%, #050505 60%);
+  position: relative;
+  overflow: hidden;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.tk-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top,
+    rgba(129, 173, 78, 0.9),
+    transparent 55%
+  );
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.tk-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.tk-hero-logo {
+  width: 240px; /* slightly larger for desktop */
+  margin: 0 auto 24px;  /* NEW — centers logo, adds spacing */
+  display: block;
+  filter: drop-shadow(0 0 18px rgba(0, 0, 0, 0.9));
+}
+
+.tk-hero-title {
+  font-size: clamp(1.9rem, 3vw, 2.7rem);
+  margin-bottom: 15px;
+  color: var(--tk-ivory);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.tk-hero-sub {
+  max-width: 650px;
+  margin: 0 auto 25px;
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  color: var(--tk-text-muted);
+  line-height: 1.7;
+}
+
+.tk-hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+
+.tk-btn {
+  border-radius: 999px;
+  padding: 10px 26px;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.25s ease;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.tk-btn-primary {
+  background: var(--tk-gold);
+  color: #111;
+  box-shadow: 0 0 18px var(--tk-gold-soft);
+}
+
+.tk-btn-primary:hover {
+  box-shadow: 0 0 26px var(--tk-gold-soft);
+  transform: translateY(-2px);
+}
+
+.tk-btn-ghost {
+  background: transparent;
+  color: var(--tk-ivory);
+  border-color: rgba(129, 173, 78, 0.9);
+}
+
+.tk-btn-ghost:hover {
+  border-color: var(--tk-gold);
+  color: var(--tk-gold);
+}
+
+/* ---------------- SECTIONS ---------------- */
+
+.tk-section {
+  padding: 60px 20px;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.tk-section-title {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--tk-ivory);
+}
+
+.tk-section-sub {
+  color: var(--tk-text-muted);
+  max-width: 600px;
+  font-size: 0.98rem;
+}
+
+/* ---------------- COLLECTIONS ---------------- */
+
+.tk-collections {
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.tk-collection-grid {
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 24px;
+}
+
+.tk-collection-card {
+  position: relative;
+  background: linear-gradient(
+      135deg,
+      rgbargba(129, 173, 78, 0.9),
+      transparent 60%
+    ),
+    #151515;
+  border-radius: 18px;
+  padding: 22px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border 0.25s ease;
+}
+
+.tk-collection-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top left,
+    rgba(85, 107, 47, 0.3),
+    transparent 55%
+  );
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.tk-collection-card h3 {
+  position: relative;
+  z-index: 1;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: var(--tk-ivory);
+}
+
+.tk-collection-card p {
+  position: relative;
+  z-index: 1;
+  font-size: 0.95rem;
+  color: var(--tk-text-muted);
+  margin-bottom: 16px;
+}
+
+.tk-link-btn {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  border: none;
+  color: var(--tk-gold);
+  font-size: 0.9rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.tk-link-btn::after {
+  content: "";
+  display: block;
+  margin-top: 3px;
+  width: 34px;
+  height: 1px;
+  background: var(--tk-gold);
+  transition: width 0.25s ease;
+}
+
+.tk-collection-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  border-color: rgba(129, 173, 78, 0.9);
+}
+
+.tk-collection-card:hover .tk-collection-overlay {
+  opacity: 1;
+}
+
+.tk-collection-card:hover .tk-link-btn::after {
+  width: 60px;
+}
+
+/* ---------------- FEATURED ---------------- */
+
+.tk-featured-grid {
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.tk-feature-card {
+  background: #111;
+  border-radius: 18px;
+  padding: 22px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.65);
+  position: relative;
+}
+
+.tk-feature-tag {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--tk-gold);
+}
+
+.tk-feature-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.tk-feature-card p {
+  font-size: 0.95rem;
+  color: var(--tk-text-muted);
+  margin-bottom: 18px;
+}
+
+/* ---------------- STORY ---------------- */
+
+.tk-story {
+  padding-bottom: 80px;
+}
+
+.tk-story-inner {
+  display: flex;
+  gap: 26px;
+  align-items: flex-start;
+  margin-top: 22px;
+}
+
+.tk-story-line {
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    var(--tk-gold),
+    rgba(129, 173, 78, 0.9)
+  );
+  height: 100%;
+}
+
+.tk-story-content p {
+  margin-bottom: 12px;
+  font-size: 0.98rem;
+  color: var(--tk-text-muted);
+  line-height: 1.7;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 768px) {
+  .tk-hero {
+    padding-top: 70px;
+  }
+
+  .tk-story-inner {
+    flex-direction: row;
+  }
+
+  .tk-story-line {
+    height: auto;
+  }
+}
