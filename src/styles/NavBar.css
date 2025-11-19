@@ -1,0 +1,89 @@
+/* ------------------------------------------------ */
+/* CYBER-NOIR NAVBAR                                */
+/* ------------------------------------------------ */
+
+.navigate {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #05070A; /* Same deep noir as the Home page */
+  padding: 8px 18px;   /* Slimmer height */
+  border-bottom: 1px solid rgba(60, 120, 255, 0.25); /* neon edge line */
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Cyber-noir nav links */
+.navigate a {
+  color: #dbe9ff;
+  font-family: "Zebraesq", sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Neon hover glow */
+.navigate a:hover {
+  color: #77aaff;
+  text-shadow: 0 0 6px rgba(80, 150, 255, 0.8);
+}
+
+/* Logo resizing */
+.nav-logo {
+  height: 150px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* If you have nav buttons */
+.home-button,
+.about-button {
+  font-family: "Zebraesq", sans-serif;
+  background: rgba(80, 150, 255, 0.08);
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: #dbe9ff;
+
+  border: 1px solid rgba(80, 150, 255, 0.25);
+
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Button glow on hover */
+.home-button:hover,
+.about-button:hover {
+  background: rgba(80, 150, 255, 0.2);
+  box-shadow: 0 0 12px rgba(80, 150, 255, 0.35);
+}
+
+/* Internal spacing for button wrappers */
+.button-wrapper > * {
+  margin-right: 20px;
+}
+
+/* --------------------------------------- */
+/* RESPONSIVE                              */
+/* --------------------------------------- */
+
+@media (max-width: 768px) {
+  .navigate {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .navigate a {
+    margin: 6px 0;
+  }
+
+  .home-button,
+  .about-button {
+    margin-top: 6px;
+  }
+}
