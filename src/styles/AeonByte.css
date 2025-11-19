@@ -1,6 +1,243 @@
 /* ------------------------------
    PAGE LAYOUT — MAKES FOOTER STICK
 --------------------------------*/
+
+/* ============================================================
+   AEONBYTE CYBER-NOIR INTERFACE
+   Colors: Neon Blue (#27c8ff), Deep Black (#000), Soft Cyan Glow
+   Fonts: Zebraesq or clean sans-serif fallback
+   ============================================================ */
+
+:root {
+  --aeon-blue: #27c8ff;
+  --aeon-glow: rgba(39, 200, 255, 0.6);
+  --aeon-softglow: rgba(39, 200, 255, 0.2);
+  --aeon-dark: #000;
+  --aeon-text-light: #d5f2ff;
+}
+
+/* ----------------------------------------------
+   PAGE LAYOUT
+---------------------------------------------- */
+
+.aeonbyte-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  color: var(--aeon-text-light);
+  font-family: "Zebraesq", sans-serif;
+  overflow-x: hidden;
+}
+
+
+
+/* ----------------------------------------------
+   HERO SECTION
+---------------------------------------------- */
+.aeon-hero {
+  text-align: center;
+  padding: 100px 30px 80px;
+  position: relative;
+}
+
+/* Animated cyber grid background */
+.aeon-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(transparent 0%, rgba(39, 200, 255, 0.05)),
+    repeating-linear-gradient(
+      to right,
+      rgba(39, 200, 255, 0.04) 0px,
+      rgba(39, 200, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 80px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      rgba(39, 200, 255, 0.04) 0px,
+      rgba(39, 200, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 80px
+    );
+  animation: gridmove 16s linear infinite;
+  z-index: 0;
+}
+
+@keyframes gridmove {
+  0% { background-position: 0 0; }
+  100% { background-position: 80px 80px; }
+}
+
+.aeon-hero * {
+  position: relative;
+  z-index: 2;
+}
+
+.aeon-hero-logo {
+  width: 230px;
+  margin: 0 auto 25px;
+  filter: drop-shadow(0 0 20px var(--aeon-glow));
+}
+
+.aeon-hero-title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  color: var(--aeon-blue);
+  text-shadow: 0 0 18px var(--aeon-glow);
+  margin-bottom: 18px;
+}
+
+.aeon-hero-sub {
+  max-width: 650px;
+  margin: 0 auto 25px;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+.aeon-hero-btn {
+  background: var(--aeon-blue);
+  color: #000;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 0 18px rgba(39, 200, 255, 0.7);
+}
+
+.aeon-hero-btn:hover {
+  box-shadow: 0 0 30px rgba(39, 200, 255, 1);
+  transform: scale(1.05);
+}
+
+
+
+/* ----------------------------------------------
+   FEATURE CARDS
+---------------------------------------------- */
+
+.aeon-features {
+  padding: 70px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.aeon-feature-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(39, 200, 255, 0.15);
+  padding: 25px;
+  border-radius: 14px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 12px rgba(39, 200, 255, 0.18);
+  transition: 0.3s ease;
+}
+
+.aeon-feature-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(39, 200, 255, 0.4);
+  box-shadow: 0 0 25px rgba(39, 200, 255, 0.5);
+}
+
+.aeon-feature-card h3 {
+  color: var(--aeon-blue);
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  text-shadow: 0 0 10px var(--aeon-glow);
+}
+
+.aeon-feature-card p {
+  opacity: 0.85;
+  font-size: 1.05rem;
+}
+
+
+
+/* ----------------------------------------------
+   MISSION SECTION
+---------------------------------------------- */
+
+.aeon-mission {
+  text-align: center;
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.aeon-mission h2 {
+  font-size: 2rem;
+  color: var(--aeon-blue);
+  text-shadow: 0 0 14px var(--aeon-glow);
+  margin-bottom: 16px;
+}
+
+.aeon-mission p {
+  line-height: 1.7;
+  opacity: 0.85;
+  font-size: 1.2rem;
+}
+
+
+
+/* ----------------------------------------------
+   CALL TO ACTION
+---------------------------------------------- */
+
+.aeon-cta {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.aeon-cta h2 {
+  color: var(--aeon-blue);
+  text-shadow: 0 0 15px var(--aeon-glow);
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.aeon-cta-btn {
+  background: var(--aeon-blue);
+  color: #000;
+  border: none;
+  padding: 14px 40px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 18px rgba(39, 200, 255, 0.7);
+  transition: 0.3s ease;
+}
+
+.aeon-cta-btn:hover {
+  box-shadow: 0 0 30px rgba(39, 200, 255, 1);
+  transform: scale(1.05);
+}
+
+
+
+/* ----------------------------------------------
+   RESPONSIVE 
+---------------------------------------------- */
+
+@media (max-width: 768px) {
+  .aeon-hero {
+    padding-top: 70px;
+  }
+
+  .aeon-feature-card {
+    padding: 20px;
+  }
+
+  .aeon-cta {
+    padding: 60px 20px;
+  }
+}
+
 .aeonbyte-page {
   min-height: 100vh;        /* Make the page stretch full height */
   display: flex;            /* Enable vertical stacking */
